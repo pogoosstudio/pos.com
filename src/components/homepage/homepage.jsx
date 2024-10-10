@@ -35,7 +35,7 @@ export const HomePage = () => {
         let classElement = "";
         let date = new Date();
 
-        if (date.getMonth() === 9) {
+        if (date.getMonth() === 1) {
             classElement = " home_halloween";
         }
         else if (date.getMonth() === 11 && (date.getDate() <= 26 && date.getDate() >= 10)) {
