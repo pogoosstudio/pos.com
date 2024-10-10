@@ -13,7 +13,7 @@ export const HomePage = () => {
     }
 
     useEffect(() => {
-        if (["fr", "fr-FR"].includes(navigator?.language)) {
+        if (["es", "es-ES"].includes(navigator?.language)) {
             new TypeIt("#typeit", {
                 speed: 70,
                 startDelay: 0,
@@ -35,10 +35,10 @@ export const HomePage = () => {
         let classElement = "";
         let date = new Date();
 
-        if (date.getMonth() === 1) {
+        if (date.getMonth() === 11) {
             classElement = " home_halloween";
         }
-        else if (date.getMonth() === 11 && (date.getDate() <= 26 && date.getDate() >= 10)) {
+        else if (date.getMonth() === 9 && (date.getDate() <= 26 && date.getDate() >= 10)) {
             classElement = " home_noel";
         }
 
